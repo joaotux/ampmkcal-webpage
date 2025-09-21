@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "lang": "en-US",
+    "title": "AmpMkCal - Calorie and Macronutrient Tracking",
+    "description": "A complete app for calorie and macronutrient control, exercise tracking, and weight monitoring. Achieve your goals in a healthy way.",
+    "keywords": "calorie tracking, macronutrients, diet, exercise, weight, health, fitness, app"
+  },
+  "nav": {
+    "home": "Home",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "hero": {
+    "title": "Coming Soon",
+    "subtitle": "We're working on something amazing for you!",
+    "description": "A complete app for calorie and macronutrient control, exercise tracking, and weight monitoring. Whatever your goal – lose weight, gain muscle mass, or stay in shape – this app was made for you!",
+    "features": [
+      "✅ Calorie and Macronutrient Control",
+      "💪 Exercise Logging and Calorie Burn",
+      "⚖️ Weight and Measurements Monitoring",
+      "🎯 Set Your Goals",
+      "🚰 Hydration Control",
+      "🍽️ Meal Planning",
+      "😊 Daily Mood Tracking",
+      "📊 Everything in one place!"
+    ],
+    "cta": "Download now and start your journey! 🚀"
+  },
+  "footer": {
+    "contact": "Contact",
+    "contactEmail": "contact@ampmkcal.com",
+    "followUs": "Follow Us",
+    "copyright": "© 2025 AmpMkCal. All rights reserved.",
+    "tagline": "Developed with ❤️ to help people achieve their health and fitness goals."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: September 21, 2025",
+    "intro": "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights.",
+    "sections": [
+      {
+        "title": "Information We Collect",
+        "content": "We collect several different types of information for various purposes to provide and improve our Service to you."
+      },
+      {
+        "title": "How We Use Your Information",
+        "content": "We use the collected data for various purposes: to provide and maintain our Service, to notify you about changes to our Service, to allow you to participate in interactive features of our Service when you choose to do so."
+      },
+      {
+        "title": "Data Protection",
+        "content": "The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated: September 21, 2025",
+    "intro": "These Terms of Service govern the use of our Service operated by AmpMkCal.",
+    "sections": [
+      {
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using this service, you accept and agree to be bound by the terms and provision of this Agreement."
+      },
+      {
+        "title": "Use of the Service",
+        "content": "You may use our service for lawful purposes only. You agree not to use the service in a way that could damage, disable, overburden, or impair the service."
+      },
+      {
+        "title": "User Responsibilities",
+        "content": "You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer."
+      }
+    ]
+  }
+}

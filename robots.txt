@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://ampmkcal.com/sitemap.xml
+
+# Block access to admin areas (if any in the future)
+Disallow: /admin/
+Disallow: /private/
+
+# Block access to system files
+Disallow: /*.json$
+Disallow: /js/
+Disallow: /css/
+Disallow: /assets/
+
+# Allow social media crawlers to access all content
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Crawl delay for general crawlers
+Crawl-delay: 1

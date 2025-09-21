@@ -1,0 +1,395 @@
+/* ====================================
+   BOOTSTRAP COMPLEMENTARY STYLES
+   AmpMkCal Custom Styles
+   ==================================== */
+
+/* CSS Custom Properties (Variables) */
+:root {
+    /* Brand Colors - Override Bootstrap's primary color */
+    --bs-primary: #6366f1;
+    --bs-primary-rgb: 99, 102, 241;
+    --bs-secondary: #ec4899;
+    --bs-secondary-rgb: 236, 72, 153;
+    
+    /* Custom Colors */
+    --color-accent: #f59e0b;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-error: #ef4444;
+    
+    /* Typography */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Spacing */
+    --section-padding: 4rem 0;
+    --container-max-width: 1200px;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+    /* Transitions */
+    --transition-base: all 0.3s ease;
+    --transition-fast: all 0.15s ease;
+}
+
+/* Override Bootstrap font family */
+body {
+    font-family: var(--font-family) !important;
+    line-height: 1.6;
+}
+
+/* ====================================
+   CUSTOM COMPONENTS
+   ==================================== */
+
+/* Enhanced Navbar */
+.navbar {
+    transition: var(--transition-base);
+    backdrop-filter: blur(8px);
+}
+
+.navbar-scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: var(--shadow-sm);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+/* Custom Buttons */
+.btn {
+    font-weight: 500;
+    letter-spacing: 0.025em;
+    transition: var(--transition-base);
+    border-radius: 0.5rem;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--bs-primary), #8b5cf6);
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+}
+
+/* Enhanced Cards */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition-base);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+    border: none;
+    font-weight: 600;
+}
+
+/* Custom Alerts */
+.alert {
+    border: none;
+    border-radius: 0.75rem;
+    border-left: 4px solid;
+}
+
+.alert-info {
+    border-left-color: var(--bs-primary);
+    background-color: rgba(99, 102, 241, 0.1);
+}
+
+.alert-warning {
+    border-left-color: var(--color-warning);
+    background-color: rgba(245, 158, 11, 0.1);
+}
+
+.alert-primary {
+    border-left-color: var(--bs-primary);
+    background-color: rgba(99, 102, 241, 0.1);
+}
+
+/* Enhanced List Groups */
+.list-group-item {
+    border: none;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: var(--transition-fast);
+}
+
+.list-group-item:hover {
+    background-color: rgba(99, 102, 241, 0.05);
+    padding-left: 0.5rem;
+}
+
+/* ====================================
+   CONTENT PAGES (Privacy Policy & Terms)
+   ==================================== */
+
+/* Light gray background for content pages */
+.main.py-5 {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Enhanced content readability */
+.main.py-5 .container {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-sm);
+    padding: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Ensure text is readable on light backgrounds */
+.main.py-5 h1,
+.main.py-5 h2,
+.main.py-5 h3,
+.main.py-5 p,
+.main.py-5 li {
+    color: #1f2937;
+}
+
+/* Enhanced cards for content sections */
+.main.py-5 .card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: var(--shadow-sm);
+}
+
+.main.py-5 .alert {
+    background-color: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.main.py-5 .alert-warning {
+    background-color: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.main.py-5 .alert-primary {
+    background-color: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+/* ====================================
+   HERO SECTION
+   ==================================== */
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(99, 102, 241, 0.1);
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, #ffffff, #e0e7ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+/* ====================================
+   FEATURES SECTION
+   ==================================== */
+
+.feature-card {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    height: 100%;
+    transition: var(--transition-base);
+    background: linear-gradient(135deg, #f8fafc, #ffffff);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+}
+
+.feature-card:hover {
+    background: linear-gradient(135deg, #ffffff, #f1f5f9);
+    border-color: var(--bs-primary);
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(135deg, var(--bs-primary), #8b5cf6);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* ====================================
+   FOOTER ENHANCEMENTS
+   ==================================== */
+
+.footer {
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--bs-primary), transparent);
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    transition: var(--transition-base);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: var(--bs-primary);
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+/* ====================================
+   UTILITY CLASSES
+   ==================================== */
+
+/* Custom text colors */
+.text-gradient {
+    background: linear-gradient(135deg, var(--bs-primary), #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading animation */
+.spinner {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid rgba(99, 102, 241, 0.2);
+    border-left-color: var(--bs-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ====================================
+   RESPONSIVE DESIGN
+   ==================================== */
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .feature-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1200px) {
+    .container {
+        max-width: var(--container-max-width);
+    }
+}
+
+/* Dark mode support (for future implementation) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bs-body-bg: #0f172a;
+        --bs-body-color: #e2e8f0;
+    }
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .footer {
+        display: none !important;
+    }
+    
+    .container {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+}
