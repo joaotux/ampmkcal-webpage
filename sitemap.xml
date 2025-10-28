@@ -1,60 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-    
-    <!-- Homepage - PT-BR -->
-    <url>
-        <loc>https://ampmkcal.com/</loc>
-        <lastmod>2025-09-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/" />
-        <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/?lang=en-us" />
-        <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/?lang=es-es" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ampmkcal.com/" />
-    </url>
-    
-    <!-- Homepage - English -->
-    <url>
-        <loc>https://ampmkcal.com/?lang=en-us</loc>
-        <lastmod>2025-09-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/" />
-        <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/?lang=en-us" />
-        <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/?lang=es-es" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ampmkcal.com/" />
-    </url>
-    
-    <!-- Homepage - Spanish -->
-    <url>
-        <loc>https://ampmkcal.com/?lang=es-es</loc>
-        <lastmod>2025-09-21</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/" />
-        <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/?lang=en-us" />
-        <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/?lang=es-es" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ampmkcal.com/" />
-    </url>
-    
-    <!-- Privacy Policy -->
-    <url>
-        <loc>https://ampmkcal.com/privacy-policy.html</loc>
-        <lastmod>2025-09-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
-    <!-- Terms of Service -->
-    <url>
-        <loc>https://ampmkcal.com/terms-of-service.html</loc>
-        <lastmod>2025-09-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        
+  <url>
+    <loc>https://ampmkcal.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/en-us/" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/es-es/" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/pt-br/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ampmkcal.com/" />
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ampmkcal.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/en-us/about" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/es-es/about" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/pt-br/about" />
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://ampmkcal.com/features</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/en-us/features" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/es-es/features" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/pt-br/features" />
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://ampmkcal.com/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/en-us/pricing" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/es-es/pricing" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/pt-br/pricing" />
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://ampmkcal.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/en-us/blog" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/es-es/blog" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/pt-br/blog" />
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ampmkcal.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en-us" href="https://ampmkcal.com/en-us/contact" />
+    <xhtml:link rel="alternate" hreflang="es-es" href="https://ampmkcal.com/es-es/contact" />
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://ampmkcal.com/pt-br/contact" />
+    <lastmod>2023-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
 </urlset>

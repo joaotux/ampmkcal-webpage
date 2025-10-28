@@ -7,6 +7,7 @@ Sitemap: https://ampmkcal.com/sitemap.xml
 # Block access to admin areas (if any in the future)
 Disallow: /admin/
 Disallow: /private/
+Disallow: /cgi-bin/
 
 # Block access to system files
 Disallow: /*.json$
