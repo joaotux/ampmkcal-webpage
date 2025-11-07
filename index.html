@@ -193,44 +193,54 @@
                     </div>
                 </div>
 
-                <!-- App Image Carousel -->
+                <!-- App Image Carousel with Mockup Overlay -->
                 <div class="col-lg-5 col-12 d-lg-block text-center px-lg-5 px-3 order-lg-2 order-1 mb-4 mb-lg-0 d-flex align-items-center">
-                    <div id="appCarousel" class="carousel slide w-100" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                    <div class="phone-mockup-container position-relative w-100 d-flex justify-content-center">
+                        <!-- Carousel inside the phone mockup -->
+                        <div id="appCarousel" class="carousel slide phone-carousel" data-bs-ride="carousel" style="width: 300px; height: 600px; position: relative; z-index: 1;">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/tela_app_01.jpeg" alt="AmPmKcal App - Tela 1"
+                                        class="d-block mx-auto img-fluid feature-image"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 25px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/tela_app_02.jpeg" alt="AmPmKcal App - Tela 2"
+                                        class="d-block mx-auto img-fluid feature-image"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 25px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/tela_app_03.jpeg" alt="AmPmKcal App - Tela 3"
+                                        class="d-block mx-auto img-fluid feature-image"
+                                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 25px;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#appCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#appCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/tela_app_01.jpeg" alt="AmPmKcal App - Tela 1"
-                                    class="d-block mx-auto img-fluid feature-image"
-                                    style="max-width: 100%; width: 300px; height: 600px; object-fit: cover;">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/tela_app_02.jpeg" alt="AmPmKcal App - Tela 2"
-                                    class="d-block mx-auto img-fluid feature-image"
-                                    style="max-width: 100%; width: 300px; height: 600px; object-fit: cover;">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/tela_app_03.jpeg" alt="AmPmKcal App - Tela 3"
-                                    class="d-block mx-auto img-fluid feature-image"
-                                    style="max-width: 100%; width: 300px; height: 600px; object-fit: cover;">
-                            </div>
+                        
+                        <!-- Phone Mockup Overlay -->
+                        <div class="phone-mockup-overlay position-absolute" style="top: 0; left: 50%; transform: translateX(-50%); z-index: 2; pointer-events: none;">
+                            <img src="assets/icons/mockup.png" alt="Phone Mockup" 
+                                class="img-fluid" 
+                                style="width: 300px; height: 600px; object-fit: contain;">
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#appCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#appCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
 
@@ -304,7 +314,7 @@
                     <div class="video-wrapper">
                         <div class="ratio ratio-16x9">
                             <iframe
-                                src="https://www.youtube-nocookie.com/embed/JIyxgNR-wY0?rel=0&modestbranding=1&loop=1&playlist=JIyxgNR-wY0"
+                                src="https://www.youtube-nocookie.com/embed/txJkjc0dhUo?rel=0&modestbranding=1&loop=1&playlist=txJkjc0dhUo"
                                 title="AmPmKcal - Demonstração" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>

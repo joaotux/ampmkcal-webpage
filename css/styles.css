@@ -227,3 +227,98 @@ header {
 .text-black-01 {
     color: #ffffff;
 }
+
+/* Phone Mockup Styles */
+.phone-mockup-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.phone-carousel {
+    position: relative;
+    z-index: 1;
+    width: 300px !important;
+    height: 600px !important;
+}
+
+.phone-carousel .carousel-inner {
+    overflow: hidden;
+    height: 100%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+}
+
+.phone-carousel .carousel-item {
+    height: 100%;
+    overflow: hidden;
+}
+
+.phone-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding-top: 1px;
+    padding-right: 1px;
+    box-sizing: border-box;
+    /* Garantir que a imagem preencha toda a área visível */
+    transform: scaleX(0.95) scaleY(0.9817);
+}
+
+.phone-mockup-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    pointer-events: none;
+    width: 300px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 300px;
+    max-height: 600px;
+}
+
+/* Carousel controls with higher z-index */
+.phone-carousel .carousel-control-prev,
+.phone-carousel .carousel-control-next {
+    z-index: 3;
+    width: 5%;
+}
+
+.phone-carousel .carousel-indicators {
+    z-index: 3;
+    bottom: -30px;
+}
+
+/* Responsive adjustments for phone mockup */
+@media (max-width: 767.98px) {
+    .phone-mockup-container {
+        min-height: 445px;
+    }
+    
+    .phone-carousel {
+        width: 225px !important;
+        height: 453px !important;
+    }
+    
+    .phone-mockup-overlay {
+        width: 225px;
+        height: 453px;
+    }
+    
+    .phone-mockup-overlay img {
+        max-width: 225px;
+        max-height: 451px;
+    }
+}
