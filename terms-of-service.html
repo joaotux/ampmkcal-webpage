@@ -1,84 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title data-i18n="terms.title">Termos de Serviço - AmpMkCal</title>
-    <meta name="description" content="Termos de serviço do AmpMkCal. Conheça as regras e condições para uso do nosso aplicativo de controle de calorias e fitness.">
+    <meta name="description" content="Termos e Condições do aplicativo AmPmKcal">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ampmkcal.com/terms-of-service.html">
-    <meta property="og:title" data-i18n="terms.title" content="Termos de Serviço - AmpMkCal">
-    <meta property="og:description" content="Termos de serviço do AmpMkCal. Conheça as regras e condições para uso do nosso aplicativo de controle de calorias e fitness.">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://ampmkcal.com/terms-of-service.html">
-    <meta property="twitter:title" data-i18n="terms.title" content="Termos de Serviço - AmpMkCal">
-    <meta property="twitter:description" content="Termos de serviço do AmpMkCal. Conheça as regras e condições para uso do nosso aplicativo de controle de calorias e fitness.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ampmkcal.com/terms-of-service.html">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/styles-bootstrap.css">
+    <title>Termos e Condições - AmPmKcal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico?v=1" type="image/x-icon">
+    <style>
+        .terms-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .terms-container h1 {
+            color: #59bb7e;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        
+        .terms-container h2 {
+            color: #3ea264;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+        }
+        
+        .terms-container p, 
+        .terms-container li {
+            text-align: left;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .terms-container ul {
+            text-align: left;
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .terms-container a {
+            color: #59bb7e;
+            text-decoration: none;
+        }
+        
+        .terms-container a:hover {
+            color: #3ea264;
+            text-decoration: underline;
+        }
+        
+        .terms-section {
+            margin-bottom: 2rem;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #59bb7e;
+        }
+        
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #59bb7e;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(89, 187, 126, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .back-button:hover {
+            background-color: #3ea264;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(89, 187, 126, 0.4);
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Header -->
-        <!-- Header -->
-    <header role="banner">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" role="navigation">
+    <!-- Header Navigation -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #59bb7e;">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary fs-4" href="/" aria-label="AmpMkCal Home">
-                    AmpMkCal
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/icon-branco.png" alt="AmPmKcal" style="height: 40px; width: 40px; object-fit: cover;" class="me-2">
+                    <span>AmPmKcal</span>
                 </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="/" data-i18n="nav.home">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="/privacy-policy.html" data-i18n="nav.privacy">Política de Privacidade</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium active" href="/terms-of-service.html" data-i18n="nav.terms">Termos de Serviço</a>
-                        </li>
                     </ul>
-                    
-                    <!-- Language selector -->
-                    <div class="dropdown">
-                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="langToggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="currentLang">PT</span>
+                    <div class="dropdown language-selector me-3">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/flag-brazil.svg" alt="Português" id="lang-icon" class="me-2"
+                                style="width: 24px; height: auto;">
+                            <span id="selected-language">Português</span>
                         </button>
-                        <ul class="dropdown-menu" id="langDropdown">
-                            <li><button class="dropdown-item lang-option" data-lang="pt-br">🇧🇷 Português</button></li>
-                            <li><button class="dropdown-item lang-option" data-lang="en-us">🇺🇸 English</button></li>
-                            <li><button class="dropdown-item lang-option" data-lang="es-es">🇪🇸 Español</button></li>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"
+                                    data-lang-option="en-US"><img src="assets/flag-us.svg" alt="English" class="me-2"
+                                        style="width: 24px; height: auto;">English (US)</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"
+                                    data-lang-option="es-ES"><img src="assets/flag-es.svg" alt="Español" class="me-2"
+                                        style="width: 24px; height: auto;">Español (ES)</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"
+                                    data-lang-option="pt-BR"><img src="assets/flag-brazil.svg" alt="Português"
+                                        class="me-2" style="width: 24px; height: auto;">Português (BR)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,191 +127,80 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main py-5" role="main">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <header class="text-center mb-5">
-                        <h1 class="display-4 fw-bold text-primary" data-i18n="terms.title">Termos de Serviço</h1>
-                        <p class="lead text-muted" data-i18n="terms.lastUpdated">Última atualização: 21 de setembro de 2025</p>
-                    </header>
-                    
-                    <div class="content-body">
-                        <div class="content-intro mb-5">
-                            <div class="alert alert-info" role="alert">
-                                <p class="mb-0" data-i18n="terms.intro">Estes Termos de Serviço governam o uso do nosso Serviço operado pelo AmpMkCal.</p>
-                            </div>
-                        </div>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3" data-i18n="terms.sections.0.title">Aceitação dos Termos</h2>
-                            <p class="mb-4" data-i18n="terms.sections.0.content">Ao acessar e usar este serviço, você aceita e concorda em estar vinculado aos termos e condições deste Acordo.</p>
-                            
-                            <div class="alert alert-warning" role="alert">
-                                <p class="mb-0">Se você não concordar com qualquer parte destes termos e condições, não deverá usar o AmpMkCal. Estes Termos de Serviço se aplicam a todos os visitantes, usuários e outros que acessam ou usam o Serviço.</p>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3" data-i18n="terms.sections.1.title">Uso do Serviço</h2>
-                            <p class="mb-4" data-i18n="terms.sections.1.content">Você pode usar nosso serviço para fins legais apenas. Você concorda em não usar o serviço de forma que possa danificar, desabilitar, sobrecarregar ou prejudicar o serviço.</p>
-                            
-                            <p class="mb-3">Ao usar o AmpMkCal, você concorda em:</p>
-                            <ul class="list-group list-group-flush mb-4">
-                                <li class="list-group-item border-0 px-0">Usar o serviço apenas para fins legais e de acordo com estes Termos</li>
-                                <li class="list-group-item border-0 px-0">Não usar o serviço de forma que possa danificar, desabilitar, sobrecarregar ou prejudicar o serviço</li>
-                                <li class="list-group-item border-0 px-0">Não tentar obter acesso não autorizado a qualquer parte do serviço</li>
-                                <li class="list-group-item border-0 px-0">Não usar o serviço para transmitir vírus ou outros códigos maliciosos</li>
-                                <li class="list-group-item border-0 px-0">Fornecer informações precisas e atualizadas</li>
-                                <li class="list-group-item border-0 px-0">Manter a segurança de sua conta e senha</li>
-                            </ul>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3" data-i18n="terms.sections.2.title">Responsabilidades do Usuário</h2>
-                            <p class="mb-3" data-i18n="terms.sections.2.content">Você é responsável por manter a confidencialidade de sua conta e senha e por restringir o acesso ao seu computador.</p>
-                            
-                            <p class="mb-4">Você concorda em aceitar a responsabilidade por todas as atividades que ocorrem sob sua conta ou senha. Você deve notificar imediatamente o AmpMkCal sobre qualquer uso não autorizado de sua conta ou qualquer outra violação de segurança.</p>
-                            
-                            <div class="card bg-light border-0 mb-4">
-                                <div class="card-body">
-                                    <h5 class="card-title fw-semibold">Conteúdo do Usuário</h5>
-                                    <p class="card-text mb-0">Nosso Serviço pode permitir que você publique, vincule, armazene, compartilhe e disponibilize certas informações, texto, gráficos, vídeos ou outros materiais ("Conteúdo"). Você é responsável pelo Conteúdo que você posta no Serviço.</p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <div class="card border-warning">
-                                <div class="card-header bg-warning text-dark">
-                                    <h2 class="card-title h3 mb-0">Limitação de Responsabilidade</h2>
-                                </div>
-                                <div class="card-body">
-                                    <p class="mb-3">O AmpMkCal é fornecido "como está" e "conforme disponível" sem garantias de qualquer tipo, expressas ou implícitas. Não garantimos que o serviço seja ininterrupto, oportuno, seguro ou livre de erros.</p>
-                                    
-                                    <p class="mb-0">Em nenhuma circunstância o AmpMkCal, nem seus diretores, funcionários, parceiros, agentes, fornecedores ou afiliados, serão responsáveis por quaisquer danos indiretos, incidentais, especiais, consequenciais ou punitivos.</p>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3">Rescisão</h2>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="card h-100 border-0 bg-danger text-white">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Por nossa parte</h5>
-                                            <p class="card-text small">Podemos encerrar ou suspender sua conta imediatamente, sem aviso prévio ou responsabilidade, por qualquer motivo, incluindo, sem limitação, se você violar os Termos de Serviço.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100 border-0 bg-secondary text-white">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Por sua parte</h5>
-                                            <p class="card-text small">Após a rescisão, seu direito de usar o Serviço cessará imediatamente. Se você desejar encerrar sua conta, pode simplesmente descontinuar o uso do Serviço.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3">Lei Aplicável</h2>
-                            <p class="mb-4">Estes Termos serão interpretados e regidos de acordo com as leis do Brasil, sem considerar conflitos de disposições legais.</p>
-                            
-                            <p>Nossa falha em fazer cumprir qualquer direito ou disposição destes Termos não será considerada uma renúncia a esses direitos.</p>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3">Alterações nos Termos</h2>
-                            <div class="alert alert-primary" role="alert">
-                                <p class="mb-3">Reservamo-nos o direito, a nosso exclusivo critério, de modificar ou substituir estes Termos a qualquer momento. Se uma revisão for material, tentaremos fornecer pelo menos 30 dias de aviso antes de qualquer novo termo entrar em vigor.</p>
-                                
-                                <p class="mb-0">O que constitui uma mudança material será determinado a nosso exclusivo critério. Ao continuar a acessar ou usar nosso Serviço após essas revisões entrarem em vigor, você concorda em ficar vinculado aos termos revisados.</p>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <div class="card border-primary">
-                                <div class="card-header bg-primary text-white">
-                                    <h2 class="card-title h3 mb-0 text-white">Contato</h2>
-                                </div>
-                                <div class="card-body">
-                                    <p class="mb-3">Se você tiver alguma dúvida sobre estes Termos de Serviço, entre em contato conosco:</p>
-                                    <p class="mb-0">
-                                        Por e-mail: <a href="mailto:contact@ampmkcal.com" class="text-decoration-none fw-medium">contact@ampmkcal.com</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
+    <main class="terms-container mt-5 pt-5">
+        <h1>Termos e Condições</h1>
+        
+        <div class="terms-section">
+            <p>Estes termos e condições aplicam-se ao aplicativo AmPmKcal (doravante denominado "Aplicativo") para dispositivos móveis, criado pela UmDesenvolvedor (doravante denominada "Fornecedora de Serviços") como um serviço Freemium.</p>
+            
+            <p>Ao baixar ou utilizar o Aplicativo, você concorda automaticamente com os seguintes termos. É altamente recomendável que você leia e compreenda estes termos atentamente antes de usar o Aplicativo.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Propriedade Intelectual</h2>
+            <p>É estritamente proibida a cópia ou modificação não autorizada do Aplicativo, de qualquer parte dele ou de nossas marcas registradas. Não são permitidas quaisquer tentativas de extrair o código-fonte do Aplicativo, traduzi-lo para outros idiomas ou criar versões derivadas. Todas as marcas registradas, direitos autorais, direitos de banco de dados e outros direitos de propriedade intelectual relacionados ao Aplicativo permanecem propriedade do Provedor de Serviços.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Modificações do Serviço</h2>
+            <p>O Provedor de Serviços se empenha em garantir que o Aplicativo seja o mais benéfico e eficiente possível. Sendo assim, reserva-se o direito de modificar o Aplicativo ou cobrar por seus serviços a qualquer momento e por qualquer motivo. O Provedor de Serviços assegura que quaisquer cobranças pelo Aplicativo ou seus serviços serão comunicadas a você de forma clara.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Segurança do Dispositivo</h2>
+            <p>O Aplicativo armazena e processa os dados pessoais que você forneceu ao Provedor de Serviços para que este possa prestar o Serviço. É sua responsabilidade manter a segurança do seu telefone e o acesso ao Aplicativo. O Provedor de Serviços recomenda fortemente que você não faça jailbreak ou root no seu telefone, o que envolve a remoção das restrições e limitações de software impostas pelo sistema operacional oficial do seu dispositivo. Essas ações podem expor seu telefone a malware, vírus, programas maliciosos, comprometer os recursos de segurança do seu telefone e podem resultar no mau funcionamento ou até mesmo no mau funcionamento do Aplicativo.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Serviços de Terceiros</h2>
+            <p>Observe que o Aplicativo utiliza serviços de terceiros que possuem seus próprios Termos e Condições. Abaixo estão os links para os Termos e Condições dos provedores de serviços terceirizados utilizados pelo Aplicativo:</p>
+            <ul>
+                <li><a href="https://developers.google.com/admob/terms" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+                <li><a href="https://www.google.com/analytics/terms/" target="_blank" rel="noopener noreferrer">Google Analytics para Firebase</a></li>
+                <li><a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+            </ul>
+        </div>
+
+        <div class="terms-section">
+            <h2>Conectividade e Uso de Dados</h2>
+            <p>Tenha em atenção que o Fornecedor de Serviços não assume a responsabilidade por certos aspetos. Algumas funcionalidades da Aplicação requerem uma ligação ativa à Internet, que pode ser Wi-Fi ou fornecida pela sua operadora de rede móvel. O Fornecedor de Serviços não poderá ser responsabilizado se a Aplicação não funcionar na sua capacidade máxima devido à falta de acesso a Wi-Fi ou se tiver esgotado o seu pacote de dados.</p>
+            
+            <p>Se você estiver usando o aplicativo fora de uma área com Wi-Fi, esteja ciente de que os termos do seu contrato com a operadora de celular ainda se aplicam. Consequentemente, você poderá incorrer em cobranças da sua operadora pelo uso de dados durante a conexão com o aplicativo, ou outras cobranças de terceiros. Ao usar o aplicativo, você aceita a responsabilidade por quaisquer cobranças desse tipo, incluindo tarifas de roaming de dados, caso utilize o aplicativo fora do seu território (ou seja, região ou país) sem desativar o roaming de dados. Se você não for o titular da conta do dispositivo no qual está usando o aplicativo, presume-se que você tenha obtido a permissão do titular da conta.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Responsabilidades e Limitações</h2>
+            <p>Da mesma forma, o Provedor de Serviços nem sempre pode assumir a responsabilidade pelo seu uso do aplicativo. Por exemplo, é sua responsabilidade garantir que seu dispositivo permaneça carregado. Se a bateria do seu dispositivo acabar e você não conseguir acessar o Serviço, o Provedor de Serviços não poderá ser responsabilizado.</p>
+            
+            <p>Em relação à responsabilidade do Provedor de Serviços pelo seu uso do aplicativo, é importante observar que, embora ele se esforce para garantir que o aplicativo esteja sempre atualizado e preciso, depende de terceiros para fornecer informações que o disponibilizem a você. O Provedor de Serviços não se responsabiliza por quaisquer perdas, diretas ou indiretas, que você possa sofrer como resultado de confiar exclusivamente nessa funcionalidade do aplicativo.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Atualizações e Encerramento</h2>
+            <p>O Provedor de Serviços poderá atualizar o aplicativo futuramente. O aplicativo está atualmente disponível de acordo com os requisitos do sistema operacional (e de quaisquer outros sistemas para os quais o Provedor de Serviços decida estender a disponibilidade do aplicativo), mas esses requisitos podem mudar, e você precisará baixar as atualizações se desejar continuar usando o aplicativo. O Provedor de Serviços não garante que sempre atualizará o aplicativo para que ele seja relevante para você e/ou compatível com a versão específica do sistema operacional instalada em seu dispositivo. No entanto, você concorda em sempre aceitar as atualizações do aplicativo quando oferecidas. O Provedor de Serviços também poderá interromper o fornecimento do aplicativo e encerrar seu uso a qualquer momento, sem aviso prévio. A menos que o Provedor de Serviços o informe o contrário, em caso de encerramento, (a) os direitos e licenças concedidos a você nestes termos serão encerrados; (b) você deverá interromper o uso do aplicativo e (se necessário) excluí-lo do seu dispositivo.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Alterações a estes Termos e Condições</h2>
+            <p>O Provedor de Serviços poderá atualizar periodicamente seus Termos e Condições. Portanto, recomenda-se que você revise esta página regularmente para verificar quaisquer alterações. O Provedor de Serviços notificará você sobre quaisquer alterações publicando os novos Termos e Condições nesta página.</p>
+            
+            <p><strong>Estes termos e condições entram em vigor a partir de 08/11/2025.</strong></p>
+        </div>
+
+        <div class="terms-section">
+            <h2>Contate-nos</h2>
+            <p>Caso tenha alguma dúvida ou sugestão sobre os Termos e Condições, não hesite em contatar o Provedor de Serviços através do endereço <a href="mailto:contact@ampmkcal.com">contact@ampmkcal.com</a>.</p>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer bg-light border-top mt-5 py-5" role="contentinfo">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand mb-3">
-                        <span class="fs-4 fw-bold text-primary">AmpMkCal</span>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title mb-3" data-i18n="footer.contact">Contato</h5>
-                    <a href="mailto:contact@ampmkcal.com" class="text-decoration-none text-secondary" data-i18n="footer.contactEmail">
-                        contact@ampmkcal.com
-                    </a>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title mb-3" data-i18n="footer.followUs">Siga-nos</h5>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-secondary social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-secondary social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="my-4">
-            
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="text-muted mb-0" data-i18n="footer.copyright">
-                        © 2025 AmpMkCal. Todos os direitos reservados.
-                    </p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="d-flex flex-wrap justify-content-md-end gap-3 mt-2 mt-md-0">
-                        <a href="/privacy-policy.html" class="text-decoration-none text-muted small" data-i18n="nav.privacy">
-                            Política de Privacidade
-                        </a>
-                        <a href="/terms-of-service.html" class="text-decoration-none text-muted small" data-i18n="nav.terms">
-                            Termos de Serviço
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button">
+        <i class="fas fa-home fa-lg"></i>
+    </a>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <!-- JavaScript -->
-    <script src="/js/i18n.js"></script>
-    <script src="/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

@@ -1,84 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-theme="light">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title data-i18n="privacy.title">Política de Privacidade - AmpMkCal</title>
-    <meta name="description" content="Política de privacidade do AmpMkCal. Saiba como coletamos, usamos e protegemos suas informações pessoais.">
+    <meta name="description" content="Política de Privacidade do aplicativo AmPmKcal">
     <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ampmkcal.com/privacy-policy.html">
-    <meta property="og:title" data-i18n="privacy.title" content="Política de Privacidade - AmpMkCal">
-    <meta property="og:description" content="Política de privacidade do AmpMkCal. Saiba como coletamos, usamos e protegemos suas informações pessoais.">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:url" content="https://ampmkcal.com/privacy-policy.html">
-    <meta property="twitter:title" data-i18n="privacy.title" content="Política de Privacidade - AmpMkCal">
-    <meta property="twitter:description" content="Política de privacidade do AmpMkCal. Saiba como coletamos, usamos e protegemos suas informações pessoais.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ampmkcal.com/privacy-policy.html">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
-    
-    <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/styles-bootstrap.css">
+    <title>Política de Privacidade - AmPmKcal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico?v=1" type="image/x-icon">
+    <style>
+        .privacy-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+            line-height: 1.6;
+        }
+        
+        .privacy-container h1 {
+            color: #59bb7e;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+        }
+        
+        .privacy-container h2 {
+            color: #3ea264;
+            margin: 2rem 0 1rem 0;
+            font-size: 1.5rem;
+        }
+        
+        .privacy-container p, 
+        .privacy-container li {
+            text-align: left;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        .privacy-container ul {
+            text-align: left;
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        
+        .privacy-container a {
+            color: #59bb7e;
+            text-decoration: none;
+        }
+        
+        .privacy-container a:hover {
+            color: #3ea264;
+            text-decoration: underline;
+        }
+        
+        .privacy-section {
+            margin-bottom: 2rem;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #59bb7e;
+        }
+        
+        .back-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: #59bb7e;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(89, 187, 126, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+        
+        .back-button:hover {
+            background-color: #3ea264;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(89, 187, 126, 0.4);
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Header -->
-        <!-- Header -->
-    <header role="banner">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm" role="navigation">
+    <!-- Header Navigation -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #59bb7e;">
             <div class="container">
-                <a class="navbar-brand fw-bold text-primary fs-4" href="/" aria-label="AmpMkCal Home">
-                    AmpMkCal
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="assets/icon-branco.png" alt="AmPmKcal" style="height: 40px; width: 40px; object-fit: cover;" class="me-2">
+                    <span>AmPmKcal</span>
                 </a>
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="/" data-i18n="nav.home">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium active" href="/privacy-policy.html" data-i18n="nav.privacy">Política de Privacidade</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-medium" href="/terms-of-service.html" data-i18n="nav.terms">Termos de Serviço</a>
-                        </li>
                     </ul>
-                    
-                    <!-- Language selector -->
-                    <div class="dropdown">
-                        <button class="btn btn-outline-secondary btn-sm dropdown-toggle" type="button" id="langToggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span id="currentLang">PT</span>
+                    <div class="dropdown language-selector me-3">
+                        <button class="btn dropdown-toggle d-flex align-items-center" type="button"
+                            id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/flag-brazil.svg" alt="Português" id="lang-icon" class="me-2"
+                                style="width: 24px; height: auto;">
+                            <span id="selected-language">Português</span>
                         </button>
-                        <ul class="dropdown-menu" id="langDropdown">
-                            <li><button class="dropdown-item lang-option" data-lang="pt-br">🇧🇷 Português</button></li>
-                            <li><button class="dropdown-item lang-option" data-lang="en-us">🇺🇸 English</button></li>
-                            <li><button class="dropdown-item lang-option" data-lang="es-es">🇪🇸 Español</button></li>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"
+                                    data-lang-option="en-US"><img src="assets/flag-us.svg" alt="English" class="me-2"
+                                        style="width: 24px; height: auto;">English (US)</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"
+                                    data-lang-option="es-ES"><img src="assets/flag-es.svg" alt="Español" class="me-2"
+                                        style="width: 24px; height: auto;">Español (ES)</a></li>
+                            <li><a class="dropdown-item d-flex align-items-center" href="#"
+                                    data-lang-option="pt-BR"><img src="assets/flag-brazil.svg" alt="Português"
+                                        class="me-2" style="width: 24px; height: auto;">Português (BR)</a></li>
                         </ul>
                     </div>
                 </div>
@@ -87,232 +127,97 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main py-5" role="main">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <header class="text-center mb-5">
-                        <h1 class="display-4 fw-bold text-primary" data-i18n="privacy.title">Política de Privacidade</h1>
-                        <p class="lead text-muted" data-i18n="privacy.lastUpdated">Última atualização: 21 de setembro de 2025</p>
-                    </header>
-                    
-                    <div class="content-body">
-                        <div class="content-intro mb-5">
-                            <div class="alert alert-info" role="alert">
-                                <p class="mb-0" data-i18n="privacy.intro">Esta Política de Privacidade descreve nossas políticas e procedimentos sobre a coleta, uso e divulgação de suas informações quando você usa o Serviço e informa sobre seus direitos de privacidade.</p>
-                            </div>
-                        </div>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3" data-i18n="privacy.sections.0.title">Informações que Coletamos</h2>
-                            <p class="mb-4" data-i18n="privacy.sections.0.content">Coletamos diferentes tipos de informações para diversos fins, a fim de fornecer e melhorar nosso Serviço para você.</p>
-                            
-                            <h3 class="h5 fw-semibold text-dark mb-3">Dados Pessoais</h3>
-                            <p class="mb-3">Durante o uso do nosso Serviço, podemos solicitar que você nos forneça certas informações de identificação pessoal que podem ser usadas para contatá-lo ou identificá-lo. As informações de identificação pessoal podem incluir, mas não se limitam a:</p>
-                            <ul class="list-group list-group-flush mb-4">
-                                <li class="list-group-item border-0 px-0">Endereço de e-mail</li>
-                                <li class="list-group-item border-0 px-0">Nome e sobrenome</li>
-                                <li class="list-group-item border-0 px-0">Dados de uso</li>
-                                <li class="list-group-item border-0 px-0">Informações de saúde e fitness (peso, altura, metas)</li>
-                                <li class="list-group-item border-0 px-0">Dados de exercícios e alimentação</li>
-                            </ul>
-                            
-                            <h3 class="h5 fw-semibold text-dark mb-3">Dados de Uso</h3>
-                            <p>Podemos coletar informações sobre como o Serviço é acessado e usado. Estes Dados de Uso podem incluir informações como o endereço de protocolo de Internet do seu computador, tipo de navegador, versão do navegador, as páginas do nosso Serviço que você visita, a hora e data da sua visita, o tempo gasto nessas páginas, identificadores exclusivos de dispositivo e outros dados de diagnóstico.</p>
-                        </section>
-                    
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3" data-i18n="privacy.sections.1.title">Como Usamos Suas Informações</h2>
-                            <p class="mb-3" data-i18n="privacy.sections.1.content">Utilizamos os dados coletados para diversos fins:</p>
-                            <ul class="list-group list-group-flush mb-4">
-                                <li class="list-group-item border-0 px-0">Para fornecer e manter nosso Serviço</li>
-                                <li class="list-group-item border-0 px-0">Para notificá-lo sobre mudanças em nosso Serviço</li>
-                                <li class="list-group-item border-0 px-0">Para permitir que você participe de recursos interativos do nosso Serviço quando você optar por fazê-lo</li>
-                                <li class="list-group-item border-0 px-0">Para fornecer atendimento ao cliente e suporte</li>
-                                <li class="list-group-item border-0 px-0">Para fornecer análises ou informações valiosas para que possamos melhorar o Serviço</li>
-                                <li class="list-group-item border-0 px-0">Para monitorar o uso do Serviço</li>
-                                <li class="list-group-item border-0 px-0">Para detectar, prevenir e resolver problemas técnicos</li>
-                                <li class="list-group-item border-0 px-0">Para personalizar sua experiência com base em suas metas e preferências</li>
-                            </ul>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3" data-i18n="privacy.sections.2.title">Proteção de Dados</h2>
-                            <p class="mb-3" data-i18n="privacy.sections.2.content">A segurança de seus dados é importante para nós, mas lembre-se de que nenhum método de transmissão pela Internet ou método de armazenamento eletrônico é 100% seguro.</p>
-                            
-                            <div class="alert alert-warning" role="alert">
-                                <p class="mb-0">Embora nos esforcemos para usar meios comercialmente aceitáveis para proteger seus Dados Pessoais, não podemos garantir sua segurança absoluta. Implementamos medidas de segurança apropriadas para proteger contra acesso não autorizado, alteração, divulgação ou destruição de suas informações pessoais.</p>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <h2 class="h3 fw-bold text-dark mb-3">Seus Direitos de Privacidade</h2>
-                            <p class="mb-3">Você tem certos direitos em relação aos seus dados pessoais:</p>
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="card h-100 border-0 bg-light">
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-semibold">Direito de acesso</h5>
-                                            <p class="card-text small">Você pode solicitar uma cópia dos dados pessoais que temos sobre você</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100 border-0 bg-light">
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-semibold">Direito de retificação</h5>
-                                            <p class="card-text small">Você pode solicitar a correção de dados incorretos ou incompletos</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100 border-0 bg-light">
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-semibold">Direito de exclusão</h5>
-                                            <p class="card-text small">Você pode solicitar a exclusão de seus dados pessoais</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="card h-100 border-0 bg-light">
-                                        <div class="card-body">
-                                            <h5 class="card-title fw-semibold">Direito de portabilidade</h5>
-                                            <p class="card-text small">Você pode solicitar a transferência de seus dados</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        
-                        <section class="mb-5">
-                            <div class="card border-primary">
-                                <div class="card-header bg-primary text-white">
-                                    <h2 class="card-title h3 mb-0 text-white">Contato</h2>
-                                </div>
-                                <div class="card-body">
-                                    <p class="mb-3">Se você tiver alguma dúvida sobre esta Política de Privacidade, entre em contato conosco:</p>
-                                    <p class="mb-0">
-                                        Por e-mail: <a href="mailto:contact@ampmkcal.com" class="text-decoration-none fw-medium">contact@ampmkcal.com</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main class="privacy-container mt-5 pt-5">
+        <h1>Política de Privacidade</h1>
         
-    <!-- Footer -->
-    <footer class="footer bg-light border-top mt-5 py-5" role="contentinfo">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="footer-brand mb-3">
-                        <span class="fs-4 fw-bold text-primary">AmpMkCal</span>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title mb-3" data-i18n="footer.contact">Contato</h5>
-                    <a href="mailto:contact@ampmkcal.com" class="text-decoration-none text-secondary" data-i18n="footer.contactEmail">
-                        contact@ampmkcal.com
-                    </a>
-                </div>
-                
-                <div class="col-lg-4">
-                    <h5 class="footer-title mb-3" data-i18n="footer.followUs">Siga-nos</h5>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-secondary social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="text-secondary social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <hr class="my-4">
-            
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="text-muted mb-0" data-i18n="footer.copyright">
-                        © 2025 AmpMkCal. Todos os direitos reservados.
-                    </p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <div class="d-flex flex-wrap justify-content-md-end gap-3 mt-2 mt-md-0">
-                        <a href="/privacy-policy.html" class="text-decoration-none text-muted small" data-i18n="nav.privacy">
-                            Política de Privacidade
-                        </a>
-                        <a href="/terms-of-service.html" class="text-decoration-none text-muted small" data-i18n="nav.terms">
-                            Termos de Serviço
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="privacy-section">
+            <p>Esta política de privacidade aplica-se ao aplicativo AmPmKcal (doravante denominado "Aplicativo") para dispositivos móveis, criado pela UmDesenvolvedor (doravante denominada "Fornecedora de Serviços") como um serviço Freemium. Este serviço destina-se ao uso "TAL COMO ESTÁ".</p>
         </div>
-    </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    
-    <!-- JavaScript -->
-    <script src="/js/i18n.js"></script>
-    <script src="/js/main.js"></script>
-                </div>
-            </div>
+        <div class="privacy-section">
+            <h2>Coleta e uso de informações</h2>
+            <p>O aplicativo coleta informações quando você o baixa e usa. Essas informações podem incluir dados como:</p>
+            <ul>
+                <li>O endereço de Protocolo de Internet (ex.: endereço IP) do seu dispositivo.</li>
+                <li>As páginas do aplicativo que você visita, a data e hora da sua visita e o tempo gasto nessas páginas.</li>
+                <li>O tempo gasto no aplicativo</li>
+                <li>O sistema operacional que você usa em seu dispositivo móvel.</li>
+            </ul>
+            
+            <p>O aplicativo não coleta informações precisas sobre a localização do seu dispositivo móvel.</p>
+            
+            <p>O prestador de serviços poderá utilizar as informações que você forneceu para entrar em contato com você ocasionalmente e fornecer informações importantes, avisos necessários e promoções de marketing.</p>
+            
+            <p>Para uma melhor experiência ao usar o Aplicativo, o Provedor de Serviços poderá solicitar que você nos forneça certas informações de identificação pessoal, incluindo, entre outras, e-mail, sexo, idade, nome, peso e altura. As informações solicitadas pelo Provedor de Serviços serão retidas por ele e usadas conforme descrito nesta política de privacidade.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Acesso de terceiros</h2>
+            <p>Apenas dados agregados e anonimizados são transmitidos periodicamente a serviços externos para auxiliar o Provedor de Serviços a aprimorar o Aplicativo e seus serviços. O Provedor de Serviços poderá compartilhar suas informações com terceiros conforme descrito nesta declaração de privacidade.</p>
+            
+            <p>Observe que o Aplicativo utiliza serviços de terceiros que possuem suas próprias Políticas de Privacidade sobre o tratamento de dados. Abaixo estão os links para as Políticas de Privacidade dos provedores de serviços terceirizados utilizados pelo Aplicativo:</p>
+            <ul>
+                <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+                <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics para Firebase</a></li>
+                <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
+            </ul>
+            
+            <p>O provedor de serviços poderá divulgar informações fornecidas pelo usuário e informações coletadas automaticamente:</p>
+            <ul>
+                <li>conforme exigido por lei, como por exemplo, para cumprir uma intimação ou processo legal semelhante;</li>
+                <li>quando acreditam de boa-fé que a divulgação é necessária para proteger seus direitos, proteger sua segurança ou a segurança de terceiros, investigar fraudes ou responder a uma solicitação governamental;</li>
+                <li>Com seus prestadores de serviços de confiança, que trabalham em seu nome, não têm uso independente das informações que divulgamos a eles e concordaram em cumprir as regras estabelecidas nesta declaração de privacidade.</li>
+            </ul>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Direito de optar por não participar</h2>
+            <p>Você pode interromper facilmente toda a coleta de informações pelo aplicativo desinstalando-o. Você pode usar os processos de desinstalação padrão disponíveis no seu dispositivo móvel, na loja de aplicativos ou na sua rede.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Política de Retenção de Dados</h2>
+            <p>O provedor de serviços reterá os dados fornecidos pelo usuário enquanto você usar o aplicativo e por um período razoável após o término do uso. Se desejar que os dados fornecidos por você por meio do aplicativo sejam excluídos, entre em contato com eles pelo endereço <a href="mailto:contact@ampmkcal.com">contact@ampmkcal.com</a> e eles responderão em um prazo razoável.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Crianças</h2>
+            <p>O provedor de serviços não utiliza o aplicativo para solicitar dados ou realizar marketing direcionado a crianças menores de 13 anos.</p>
+            
+            <p>O Aplicativo não se destina a menores de 13 anos. O Provedor de Serviços não coleta intencionalmente informações de identificação pessoal de crianças menores de 13 anos. Caso o Provedor de Serviços descubra que uma criança menor de 13 anos forneceu informações pessoais, excluirá imediatamente essas informações de seus servidores. Se você for pai/mãe ou responsável legal e souber que seu filho(a) nos forneceu informações pessoais, entre em contato com o Provedor de Serviços (<a href="mailto:contact@ampmkcal.com">contact@ampmkcal.com</a>) para que possamos tomar as medidas necessárias.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Segurança</h2>
+            <p>O provedor de serviços se preocupa em proteger a confidencialidade de suas informações. O provedor de serviços implementa medidas de segurança físicas, eletrônicas e processuais para proteger as informações que processa e mantém.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Mudanças</h2>
+            <p>Esta Política de Privacidade pode ser atualizada periodicamente por qualquer motivo. O Provedor de Serviços notificará você sobre quaisquer alterações na Política de Privacidade atualizando esta página com a nova Política de Privacidade. Recomenda-se que você consulte esta Política de Privacidade regularmente para verificar se houve alterações, pois o uso contínuo será considerado como aceitação de todas as alterações.</p>
+            
+            <p><strong>Esta política de privacidade entra em vigor em 08/11/2025.</strong></p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Seu consentimento</h2>
+            <p>Ao utilizar o Aplicativo, você concorda com o processamento de suas informações conforme estabelecido nesta Política de Privacidade, tanto na versão atual quanto em versões futuras que venham a ser alteradas por nós.</p>
+        </div>
+
+        <div class="privacy-section">
+            <h2>Contate-nos</h2>
+            <p>Caso tenha alguma dúvida sobre privacidade ao usar o Aplicativo ou sobre as práticas adotadas, entre em contato com o Provedor de Serviços por e-mail, no endereço <a href="mailto:contact@ampmkcal.com">contact@ampmkcal.com</a>.</p>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-brand">
-                        <span class="brand-text">AmpMkCal</span>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3 class="footer-title" data-i18n="footer.contact">Contato</h3>
-                    <a href="mailto:contact@ampmkcal.com" class="footer-link" data-i18n="footer.contactEmail">contact@ampmkcal.com</a>
-                </div>
-                
-                <div class="footer-section">
-                    <h3 class="footer-title" data-i18n="footer.followUs">Siga-nos</h3>
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1.04-.1z" fill="currentColor"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p class="copyright" data-i18n="footer.copyright">© 2025 AmpMkCal. Todos os direitos reservados.</p>
-                <div class="footer-links">
-                    <a href="/privacy-policy.html" class="footer-link" data-i18n="nav.privacy">Política de Privacidade</a>
-                    <a href="/terms-of-service.html" class="footer-link" data-i18n="nav.terms">Termos de Serviço</a>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <!-- Back to Home Button -->
+    <a href="index.html" class="back-button">
+        <i class="fas fa-home fa-lg"></i>
+    </a>
 
-    <!-- JavaScript -->
-    <script src="/js/i18n.js"></script>
-    <script src="/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
